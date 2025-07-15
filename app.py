@@ -80,7 +80,7 @@ def predict_with_uncertainty(model, image_tensor, n_iter=20):
 st.set_page_config(page_title="수학 문제 채점기", page_icon="📐")
 st.markdown("""
     <h2 style='color:#10FF90'>54 ÷ 9 = ?</h2>
-    <p>답을 손글씨로 적은 이미지를 업로드하세요 </p>
+    <p>답을 손글씨로 적은 이미지를 업로드하세요</p>
     """, unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader("", type=["png", "jpg", "jpeg"])
@@ -99,8 +99,8 @@ if uploaded_file:
 
     # 정답 비교: 54 / 9 = 6
     correct_answer = 6
-    CONF_THRESH = 0.65
-    ENTROPY_THRESH = 0.9
+    CONF_THRESH = 0.85
+    ENTROPY_THRESH = 0.6
 
     if confidence >= CONF_THRESH and entropy <= ENTROPY_THRESH:
         if prediction == correct_answer:
