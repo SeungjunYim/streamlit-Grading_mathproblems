@@ -59,7 +59,7 @@ def predict_with_uncertainty(model, image, n_iter=30):
 # 앱 시작
 # ------------------------
 st.set_page_config(page_title="수학 문제 채점기 (Bayesian AI)", layout="centered")
-st.title("📘 수학 문제 손글씨 자동 채점기")
+st.title("수학 문제 손글씨 자동 채점기")
 st.markdown("다음 문제를 풀어 손글씨로 작성하고 사진을 업로드하세요:\n\n### `54 ÷ 9 = ?`")
 
 uploaded_file = st.file_uploader("답을 손글씨로 적은 이미지를 업로드하세요 (숫자 하나)", type=["png", "jpg", "jpeg"])
@@ -111,7 +111,7 @@ if uploaded_file and user_id:
 # 기록 조회
 # ------------------------
 st.markdown("---")
-st.subheader("📊 예측 기록 분석")
+st.subheader("예측 기록 분석")
 selected_user = st.text_input("기록을 조회할 학습자 ID 입력", "")
 
 if selected_user:
