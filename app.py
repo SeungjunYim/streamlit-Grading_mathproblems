@@ -58,7 +58,7 @@ def predict_with_uncertainty(model, image, n_iter=30):
 # ------------------------
 # 앱 시작
 # ------------------------
-st.set_page_config(page_title="✏️ 수학 문제 채점기 (Bayesian AI)", layout="centered")
+st.set_page_config(page_title="수학 문제 채점기 (Bayesian AI)", layout="centered")
 st.title("📘 수학 문제 손글씨 자동 채점기")
 st.markdown("다음 문제를 풀어 손글씨로 작성하고 사진을 업로드하세요:\n\n### `54 ÷ 9 = ?`")
 
